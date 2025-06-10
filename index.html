@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Python List Tutorial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      padding-top: 70px;
+    }
+    code {
+      background-color: #f8f9fa;
+      padding: 2px 5px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Python Dərsi</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#list-yazilisi">Yazılışı</a></li>
+          <li class="nav-item"><a class="nav-link" href="#collection">Kolleksiya</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="container">
+
+    <h1 class="mb-4">Python List Dərsi</h1>
+
+    <p>Əgər isdəsəniz buradakı tutorialı oxuya bilərsiniz:
+      <a href="https://www.w3schools.com/python/python_lists.asp" target="_blank">Tutorial_Python</a>
+    </p>
+
+    <div id="list-yazilisi">
+      <h3>Yazılışı:</h3>
+      <p><code>mylist = ["alma", "armud", "gilas"]</code></p>
+      <p>List bir çox elementi bir elementdə yadda saxlamaq üçün istifadə olunur.
+        List Python-un içində olan 4 digər elementləri yadda saxlaya bilən data tipdən biridir. Digər 3-ü Set, Tuple, Dictionary (gündəlik) -dir.
+      </p>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+
+      <!-- Sintaksiz -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            Sintaksiz (yaradılması)
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            List-i yaratmaq üçün kvadrat mötərizədən istifadə edirik:
+            <pre><code>thislist = ["alma", "armud", "gilas"]</code></pre>
+            <pre><code>print(thislist)</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- İndeksləmə -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            İndeksləmə
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            List-də elementlər 0-dan indekslənir. Məsələn:
+            <ul>
+              <li>1-ci element: <code>thislist[0]</code></li>
+              <li>2-ci element: <code>thislist[1]</code></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ordered -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+            Ordered (nizamlılıq)
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Elementlər xüsusi sıradadır:
+            <pre><code>thislist = [1, 2, 3, 5, 10]</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Digər spoilerlər eyni qaydada davam edir... -->
+
+      <!-- List uzunluğu -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseLength">
+            List uzunluğu
+          </button>
+        </h2>
+        <div id="collapseLength" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <pre><code>thislist = ["apple", "banana", "cherry"]
+print(len(thislist))</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- listdəki elementlərin data tipləri -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTypes">
+            Listdəki elementlərin data tipləri
+          </button>
+        </h2>
+        <div id="collapseTypes" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <pre><code>list1 = ["apple", "banana", "cherry"]
+list2 = [1, 5, 7, 9, 3]
+list3 = [True, False, False]</code></pre>
+
+            <p>Fərqli tiplər birlikdə ola bilər:</p>
+            <pre><code>list1 = ["abc", 34, True, 40, "male"]</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- type() funksiyası -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTypeFn">
+            type() funksiyası
+          </button>
+        </h2>
+        <div id="collapseTypeFn" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <p><code>type(mylist)</code> çağıranda <code>&lt;class 'list'&gt;</code> qaytarır.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- list() constructor -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseConstructor">
+            list() constructor-u
+          </button>
+        </h2>
+        <div id="collapseConstructor" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <pre><code>thislist = list(("apple", "banana", "cherry"))
+print(thislist)</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Python kolleksiyası -->
+      <div class="accordion-item" id="collection">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseCollections">
+            Python Kolleksiyası (Massivlər)
+          </button>
+        </h2>
+        <div id="collapseCollections" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul>
+              <li><a href="https://www.w3schools.com/python/python_lists.asp" target="_blank">List</a> - dəyişə və sıralana bilir, dublikatlara icazə verir.</li>
+              <li><a href="https://www.w3schools.com/python/python_tuples.asp" target="_blank">Tuple</a> - dəyişdirilə bilmir, amma dublikat qəbul edir.</li>
+              <li><a href="https://www.w3schools.com/python/python_sets.asp" target="_blank">Set</a> - təkrarsız kolleksiya.</li>
+              <li><a href="https://www.w3schools.com/python/python_dictionaries.asp" target="_blank">Gündəlik (Dictionary)</a> - açar-dəyər cütləri.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Suallar -->
+    <div class="mt-4">
+      <h4>Suallar:</h4>
+      <ul>
+        <li><a href="https://codeforces.com/problemset/problem/69/A" target="_blank">Listlə yazıla bilər</a></li>
+        <li><a href="https://codeforces.com/contest/1760/problem/A" target="_blank">Ordered listlə yazıla bilər</a></li>
+        <li><a href="https://codeforces.com/problemset/problem/158/A" target="_blank">Biraz daha çətin sual</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
