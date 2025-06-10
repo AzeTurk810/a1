@@ -77,6 +77,16 @@
     .gallery img:hover {
       transform: scale(1.05);
     }
+    .hv1{
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .hv1:hover {
+      transform: scale(1.05);
+    }
     footer {
       text-align: center;
       padding: 15px;
@@ -92,7 +102,9 @@
   <nav class="navbar">
     <div style="display:inline;">
         <!-- ; -->
-        <img style="width: 100px;border: solid ; border-radius: 100px;" src="./images/Logo.png" alt="">
+        <a href="https://www.z-aliyeva.edu.az/az/about/">
+          <img style="width: 100px;border: solid ; border-radius: 100px;" src="./images/Logo.png" alt="">
+        </a>
         <div>
             <!-- <h1>Sinif Xatirəsi</h1> -->
 
@@ -129,12 +141,12 @@
   
   <section id="Rehber">
       <div class="main" style="margin-top: 50px; padding-top: 50px;" >
-          <div style="color: white;display: flex; justify-content: center; "><h1 >Sinif <span style="color: #00bbf0;"> Rehberimiz</span></h1></div><!--<h1 style="color:  #00bbf0;">services</h1>-->
+          <div style="color: white;display: flex; justify-content: center; "><h1 >Sinif <span style="color: #00bbf0;"> Rəhbərimiz</span></h1></div><!--<h1 style="color:  #00bbf0;">services</h1>-->
           <p style="color: white;display: flex; justify-content: center;">Bakı Dövlət Universitetinin mexanika-riyaziyyat fakultəsini fərqlənmə diplomu ilə bitirib (2002-ci ildə bakalavr, 2004-cü ildə magistr)</p>
           <div class="container-fluid">
               <div class="row">
                   <div class="col-md-6" style="color: white;display: flex; justify-content: center;">
-                      <img class="" style="width: 550px; margin-left: 60px;" src="./images/Musviq Muellim.jpg" alt="Sekil silinib">
+                      <img class="hv1" style="width: 550px; margin-left: 60px;" src="./images/Musviq Muellim.jpg" alt="Sekil silinib">
                     </div>
                     <div class="col-md-6">
                         <h2 class="mt-5"  style="color: white;">Mikayılov Müşfiq Nəcəf oğlu</h2>
@@ -144,36 +156,73 @@
                     </div>
                 </div>
             </div>
-        </section>
+      </div>
+    </section>
+    <br>
+    <section class="sectiont">
+      <a href="./SinifRehberleri.html"><h2>Butun sinif Rehberleri</h2></a>
+    </section>
         <br>
-        <section id="sagirdler" class="sectiont">
+        <section id="sagirdler" class="sectiont carousel1">
             <h2>Best moments</h2>
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
                     <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="sekil3.png" class="d-block w-100" alt="...">
+                        <img src="./sekil3.png" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
+                            <h5>PaintBall</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="sekil4.png" class="d-block w-100" alt="...">
+                        <img src="./sekil4.png" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
+                            <h5>PaintBallın əvvəli</h5>
+                            <p>Qarşıda nəyin olacaqından xəbərsiz.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="sekil3.png" class="d-block w-100" alt="...">
+                        <img src="./images/Arsin emmi.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
+                            <h5>Arşın mal alan</h5>
+                            <p>Arşın mal alanı canlandıran aktyorumuz.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Jenga.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Jenga</h5>
+                            <p>Normal 1 boş dərs.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Cay.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Çay qonaqlıqı</h5>
+                            <p>Müəllimlərimizə əli-açıq günündə tort verilib.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Yeni il.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Yeni il</h5>
                             <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/Futbol.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Futbol oyunu</h5>
+                            <p>Komandamıza tam dəstək.</p>
                         </div>
                     </div>
                 </div>
@@ -187,6 +236,25 @@
                 </button>
             </div>
         </section>
+        <br>
+        <div class="why_choose_us">
+        <h1 class="center">Niyə Ən yaxşı <span style="color:#00bbf0;"> bizik </span></h1>
+        <div class="center "><img width="65px" class="center cevre" src="https://muradaghazade.github.io/finexo/img/w3.png" alt=""></div>
+        <div class="detail">
+            <h5 class="expert">DİM</h5>
+            <p> Sinifdə demək olarki hər kəs 250 balı keçib 9-un buraxılışında.</p>
+        </div>
+        <div class="center "><img width="65px" class="center cevre" src="./images/Arsin emmi.jpg" alt=""></div>
+        <div class="detail">
+            <h5 class="expert">Sosial aktivlik</h5>
+            <p> Sinifimiz liseyin bir çox sosial fəaliyyətində iştirak edib.</p>
+        </div>
+        <div class="center "><img width="65px" class="center cevre" src="./images/Medals.jpeg" alt=""></div>
+        <div class="detail">
+            <h5 class="expert">2 Medal</h5>
+            <p>Sinifimiz Respublika fen olimpiadasından 2 medal gətirib , gümüş və qızıl</p>
+        </div>
+    </div>
         <section id="elaqe" class="sectiont">
           <h2>Əlaqə</h2>
           <p>
